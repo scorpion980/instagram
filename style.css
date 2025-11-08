@@ -1,0 +1,116 @@
+ /* Reset */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+        /* Modal background overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+        /* Modal container */
+.modal {
+    background: #1c1c1c;
+    border-radius: 15px;
+    width: 360px;
+    padding: 30px 30px 40px 30px;
+    position: relative;
+    color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+        /* Close button */
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    border: 1.5px solid white;
+    border-radius: 8px;
+    background: transparent;
+    color: white;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+        /* Instagram logo text */
+.modal h2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+        /* Input fields */
+.modal input[type="text"],
+.modal input[type="password"] {
+    width: 100%;
+    background-color: #222;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: #ccc;
+    padding: 12px 12px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.modal input::placeholder {
+    color: #666;
+    font-size: 13px;
+}
+        /* Save login info checkbox */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: white;
+}
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+}
+        /* Login button */
+.login-btn {
+    width: 100%;
+    background-color: #4345bb;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    color: #bbb;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.login-btn:hover {
+    background-color: #5557d1;
+    color: white;
+}
+/* Forgot password text */
+.forgot-password {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.forgot-password:hover {
+    text-decoration: underline;
+}
